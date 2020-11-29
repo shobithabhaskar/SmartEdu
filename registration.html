@@ -19,7 +19,9 @@
             <form id="myform" action="index.html"  onsubmit="return  validateL();">
                 <input id="loginname" type="text" name="user-name" class="input-box" placeholder="User Name">
                 <input id="loginpass" type="password" name="user-pass" class="input-box" placeholder="Password">
-                <input ide="loginbutton" type="submit" name="login-btn" class="btn" value="Login">
+                <!-- <input ide="loginbutton" type="submit" name="login-btn" class="btn" value="Login"> -->
+                <input id="loginbutton" type="submit"  name="login-btn" class="btn" onclick="Setcookie()" value="Login">
+
             </form>
         </div>
     </section>
@@ -42,9 +44,41 @@
                 <input id="rbutton" name="rbutton"type="submit"  class="btn"  value="Signup">
             </form>
         </div>
+
+        <script> 
+            //  var x = document.getElementById("loginname"); 
+            function Setcookie()
+            {
+                // document.cookie="username=Rithul";
+                var x=document.getElementById('loginname').value ;
+                if(x.length=0)
+                {
+                    alert("Cookie is not available"); 
+    
+                }
+                else if(x.length!=0)
+                {
+                document.cookie="welcome back "+ x +"!";
+               }
+            }
+    
+            function Getcookie()
+            {
+            
+                if(document.cookie.length!=0)
+                {
+                    alert(document.cookie);
+                }
+                else
+                {
+                    alert("Cookie isnt available");
+                }
+            }
+        </script>
     </section>
 
     <script src="registration.js"></script>
+
 
 </body>
 </html>

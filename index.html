@@ -41,7 +41,7 @@
     <script src="ajax.html"></script>
 
 </head>
-<body class="host_version"> 
+<body class="host_version" onload="Getcookie()"> 
 
 	<!-- Modal -->
 	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -765,7 +765,21 @@
 			mode: 'horizontal',
 			verticalStartPosition: 'left',
 			visibleItems: 4
-		});
+        });
+        function Getcookie()
+        {
+        
+            if(document.cookie.length!=0)
+            {
+                alert(document.cookie);
+            }
+            else
+            {
+                
+            }
+        }
+        
+
 	</script>
 </body>
 </html>
