@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="teachers.xsl"?>
+
+<Smartedu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="teachers.xsd">
+	
+<!-- <Smartedu>       -->
+	<Members>
+		<SNO>1</SNO>
+		<TeacherID>1011</TeacherID>
+		<Name>KAVITHA</Name>
+		<Gender>Female</Gender>
+		<DOB>11/09/1998</DOB>
+		<Email_ID>kavitha@gmail.com</Email_ID>
+		<Mobile>7891492201</Mobile>
+		<Subject>Chemistry</Subject>
+	</Members>
+	
+	<Members>
+		<SNO>2</SNO>
+		<TeacherID>1012</TeacherID>
+		<Name>ARUN</Name>
+		<Gender>Male</Gender>
+		<DOB>18/05/1972</DOB>
+		<Email_ID>ARUN12@gmail.com</Email_ID>
+		<Mobile>745673456</Mobile>
+        <Subject>Math</Subject>
+
+	</Members>
+	
+	<Members>
+		<SNO>3</SNO>
+		<TeacherID>1013</TeacherID>
+		<Name>RAGHAVAN</Name>
+		<Gender>Male</Gender>
+		<DOB>14/09/1999</DOB>
+		<Email_ID>raghavan@gmail.com</Email_ID>
+		<Mobile>9994445551</Mobile>
+        <Subject>Physics</Subject>
+	</Members>
+	
+	<Members>
+		<SNO>4</SNO>
+		<TeacherID>1014</TeacherID>
+		<Name>INDHU</Name>
+		<Gender>Female</Gender>
+		<DOB>10/11/1980</DOB>
+		<Email_ID>indhu@gmail.com</Email_ID>
+		<Mobile>9011456879</Mobile>
+        <Subject>Biology</Subject>
+	</Members>
+	
+	<Members>
+		<SNO>5</SNO>
+		<TeacherID>1015</TeacherID>
+		<Name>CHAITRA</Name>
+		<Gender>Female</Gender>
+		<DOB>12/12/1992</DOB>
+		<Email_ID>chaitra@gmail.com</Email_ID>
+		<Mobile>7894561230</Mobile>
+        <Subject>English</Subject>
+	</Members>
+
+	
+</Smartedu>

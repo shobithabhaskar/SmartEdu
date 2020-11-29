@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="Smartedu">
+		<xsd:complexType>
+		
+		<xsd:element name="Members">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element name="SNO" type="xs:integer"/>
+					<xsd:element name="TeacherID" type="xs:string"/>
+					<xsd:element name="Name" type="xs:string"/>
+					<xsd:element name="Gender">
+						<xsd:simpleType>
+    							<xsd:restriction base="xs:string">
+      								<xsd:enumeration value="Male"/>
+      								<xsd:enumeration value="Female"/>
+      							</xsd:restriction>
+  						</xsd:simpleType>	
+					</xsd:element>
+					<xsd:element name="DOB" type="xs:string"/>
+					<xsd:element name="Email_ID" type="xs:string"/>
+					<xsd:element name="Mobile" type="xs:integer"/>
+                    <xsd:element name="Subject" type="xs:string"/>
+					
+				</xsd:sequence>	
+			</xsd:complexType>
+		</xsd:element>
+
+	</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

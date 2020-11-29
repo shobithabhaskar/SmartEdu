@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="NG.xsl"?>
+<Rotary_Vasudha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="NGO.xsd">
+	
+	<Members>
+		<SNO>1</SNO>
+		<Membership_ID>1011</Membership_ID>
+		<Name>Udit Gupta</Name>
+		<Gender>Male</Gender>
+		<DOB>11/09/1998</DOB>
+		<Email_ID>udit.ukg@gmail.com</Email_ID>
+		<Mobile>7891492201</Mobile>
+	</Members>
+	
+	<Members>
+		<SNO>2</SNO>
+		<Membership_ID>1012</Membership_ID>
+		<Name>Sopan Sharma</Name>
+		<Gender>Male</Gender>
+		<DOB>18/05/1998</DOB>
+		<Email_ID>sopa.s@gmail.com</Email_ID>
+		<Mobile>745678915</Mobile>
+	</Members>
+	
+	<Members>
+		<SNO>3</SNO>
+		<Membership_ID>1013</Membership_ID>
+		<Name>Nishant Jain</Name>
+		<Gender>Male</Gender>
+		<DOB>14109/1999</DOB>
+		<Email_ID>nishant.j@gmail.com</Email_ID>
+		<Mobile>9994445551</Mobile>
+	</Members>
+	
+	<Members>
+		<SNO>4</SNO>
+		<Membership_ID>1014</Membership_ID>
+		<Name>Mitali Khandelwal</Name>
+		<Gender>Female</Gender>
+		<DOB>10/11/2000</DOB>
+		<Email_ID>mitali.k@gmail.com</Email_ID>
+		<Mobile>9011456879</Mobile>
+	</Members>
+	
+	<Members>
+		<SNO>5</SNO>
+		<Membership_ID>1015</Membership_ID>
+		<Name>Aparna Gaba</Name>
+		<Gender>Female</Gender>
+		<DOB>12/12/1998</DOB>
+		<Email_ID>aparna.g@gmail.com</Email_ID>
+		<Mobile>7894561230</Mobile>
+	</Members>
+
+	
+</Rotary_Vasudha>
