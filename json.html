@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+     
+    <head>
+        <title>Aboutus | SmartEdu</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+            .container {
+              position: relative;
+              font-family: Arial;
+            }
+            
+            .text-block {
+              position: absolute;
+              /* top: 20px; */
+              top: 10%;
+                left: 20%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%)
+                
+              
+              color: black;
+              padding-left: 20px;
+              padding-right: 20px;
+            }
+            </style>
+ 
+    </head>
+
+<body ng-app="myapp" ng-controller="myctrl">
+       
+
+   
+    
+    <section>   
+         
+        <div class="container">
+            <!-- //<img src="cover.png" alt=""> -->
+            <div class="row">
+                <div class="col-12">
+                    
+                    
+                    
+                    
+                </div><!-- .col-12 -->
+            </div><!-- .row -->
+        </div><!-- .container
+    </section> -->
+    <div class="container">
+        
+        <img src="cover.png" alt="Nature" style="width:100%;">
+        
+        <div class="text-block">
+            <h1>Course  Details</h1>
+
+        <font size="5"> 
+        <table width="100%" align='center' cellpadding="2" cellspacing="2" border="1">
+             
+            
+            
+            <tr>
+                <th>Serial No.</th>
+                <th>Course_ID</th>
+                <th>NAME</th>
+                <th>Availablity</th>
+                <th>Validity</th>
+                <th>Call For Details</th>
+                <th>Option</th>
+            </tr>
+            <tr ng-repeat="course in courselist">
+                <td>{{$index}}</td>
+                <td>{{course.id}}</td>
+                <td>{{course.name}}</td>
+                <td>{{course.availability}}</td>
+                <td>{{course.validity}}</td>
+                <td>{{course.mobile}}</td>
+                <td>
+                    <a href="#" ng-click="delete()">Delete</a> |
+                    <a href="#" ng-click="edit(course.id)">Edit</a>
+                </td>
+            </tr>
+        </table>
+        <h3></h1>Enter/edit course details:</h3>
+        <table align='center' cellpadding="2" cellspacing="2">
+            <tr>
+                <td>ID</td>
+                <td><input type="text" ng-model="id"></td>
+            </tr>
+            <tr>
+                <td>NAME</td>
+                <td><input type="text" ng-model="name"></td>
+            </tr>
+            <tr>
+                <td>AVAILABILITY</td>
+                <td><input type="text" ng-model="availability"></td>
+            </tr>
+            <tr>
+                <td>VALIDITY/td>
+                <td><input type="text" ng-model="validity"></td>
+            </tr>
+            <tr>
+                <td>Call For Details</td>
+                <td><input type="text" ng-model="mobile"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="button" value="ADD" ng-click="add()">
+                <input type="button" value="SAVE" ng-click="save()"></td>
+            </tr>
+        </table>
+        </font>
+        
+    </div>
+</div>
+                       
+
+        
+
+  
+
+</body>
+<!-- <img src="cover.png" alt=""> -->
+
+<script src="angular.min.js"></script>
+<script src="course.js"></script>
+</html>
