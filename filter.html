@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./Angular/style.css">
+</head>
+<body ng-app="angular_filter">
+
+  <div ng-controller="filter_controller ">
+
+    
+    
+    <!-- Rows to Display:<input type="number" step="1" min="0" max="5" ng-model="rowlimit" />
+    <br \>
+    <br \> -->
+    
+    
+    <p class="center">Rows to Display:<input type="number" step="1" min="0" max="5" ng-model="rowlimit" />
+    <br \>
+    <br \></p>
+    <table class="members" align='center' cellpadding="2" cellspacing="2" border="1">
+      <tr>
+        <th>
+          <button ng-click="sortBy('id')">ID</button>
+          <span class="sortorder" ng-show="propertyName === 'id'" ng-class="{reverse: reverse}"></span>
+        </th>
+        <th>
+          <button ng-click="sortBy('name')">Name</button>
+          <span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
+        </th>
+        <th>
+          <button ng-click="sortBy('availability')">Availability</button>
+          <span class="sortorder" ng-show="propertyName === 'availability'" ng-class="{reverse: reverse}"></span>
+        </th>
+        <th>
+          <button ng-click="sortBy('validity')">validity</button>
+          <span class="sortorder" ng-show="propertyName === 'validity'" ng-class="{reverse: reverse}"></span>
+        </th>
+        <th >
+          <button size >Mobile</button>
+          <span class="sortorder" ng-show="propertyName === 'mobile'" ng-class="{reverse: reverse}"></span>
+        </th>
+      </tr>
+      <tr ng-repeat="member in members | orderBy:propertyName:reverse | limitTo:rowlimit |filter:Search ">
+        <td>{{member.id}}    </td>
+        <td>{{member.name | uppercase}}</td>
+        <td>{{member.availability | lowercase}}</td>
+        <td>{{member.validity}}</td>
+        <td>{{member.mobile}}</td>
+      </tr>
+    </table>
+    <!-- //<pre class="center">Sortby = {{propertyName}}; reverse = {{reverse}}</pre> -->
+ 
+  </div>
+  <div class="center">
+ 
+    <button ng-click="propertyName = null; reverse = false">Set to unsorted</button><br/>
+    
+
+  Search:<input type="text" placeholder="Seach anything" ng-model="Search" />
+  <br \>
+   <br \>
+
+
+  </div>
+ 
+  
+
+ 
+</body>
+<div class="footer-bar">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <p class="m-0">
+
+<script src="angular.min.js"></script>
+<script src='script.js'></script>
+<!-- <script src='./Angular/protractor.js'></script> -->
+</html>
+
+
